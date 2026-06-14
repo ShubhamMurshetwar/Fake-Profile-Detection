@@ -4,19 +4,12 @@ import numpy as np
 from flask_cors import CORS
 import json
 from werkzeug.security import generate_password_hash, check_password_hash
-import mysql.connector
+
 
 app = Flask(__name__)
 CORS(app)
 
-db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="root123",
-    database="fakeguard"
-)
 
-cursor = db.cursor(dictionary=True)
 # ============================================
 # LOAD PROFILE DATA
 # ============================================
