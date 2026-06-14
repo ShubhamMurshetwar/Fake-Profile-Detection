@@ -8,7 +8,10 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 CORS(app)
-
+# Homepage Route
+@app.route("/")
+def home():
+    return "Fake Profile Detection API Running Successfully!"
 # ============================================
 # LOAD PROFILE DATA
 # ============================================
