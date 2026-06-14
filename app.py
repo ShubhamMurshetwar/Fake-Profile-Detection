@@ -9,7 +9,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 CORS(app)
 
-cursor = db.cursor(dictionary=True)
 # ============================================
 # LOAD PROFILE DATA
 # ============================================
